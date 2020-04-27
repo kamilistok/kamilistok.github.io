@@ -14,7 +14,7 @@
 }
 
 .galleryAspectRatio {
-    padding-top: calc(100%*9/16);
+    padding-top: calc(100%*9/10);
     position: relative;
 }
 
@@ -27,4 +27,27 @@
     height: 100%;
     object-fit: cover;
     box-shadow: 0 0 3px 3px rgb(124, 124, 124);
+}
+
+#image3 {
+    object-position: 50% 5%;
+}
+
+#image4,
+#image7 {
+    object-position: 50% 20%;
+}
+
+#image6 {
+    object-position: 50% 40%;
+}
+
+#image8 {
+    object-position: 50% 15%;
+
+}
+
+#image9 {
+    object-position: 50% 30%;
+
 }
