@@ -69,6 +69,18 @@
     margin: 0 5px;
 }
 
+.servicesPositionPrice::before {
+    content: "od ";
+}
+
+.servicesPositionPrice::after {
+    content: "zł";
+}
+
+.curtains::after {
+    content: "/mb";
+}
+
 .servicesPositionPrice {
     order: 3;
 }
