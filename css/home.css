@@ -82,6 +82,7 @@
     border: 2px solid #fb414e;
     font-size: 20px;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .servicesBtn {
@@ -94,6 +95,7 @@
     border: 2px solid #fb414e;
     font-size: 20px;
     cursor: pointer;
+    transition: 0.4s;
 }
 
 .startBtn:hover,
