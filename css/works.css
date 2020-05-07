@@ -21,9 +21,10 @@
 }
 
 .worksAspectRatio {
-    padding-top: calc(100%*9/10);
+    padding-top: calc(100%*12/12);
     position: relative;
 }
+
 
 .worksImage {
     width: 100%;
