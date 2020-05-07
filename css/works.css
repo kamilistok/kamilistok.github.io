@@ -1,0 +1,42 @@
+.container__works {
+    padding: 100px;
+}
+
+
+.works {
+    list-style: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    gap: 20px;
+}
+
+
+
+@media(max-width: 991px) {
+    .works {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.worksAspectRatio {
+    padding-top: calc(100%*9/10);
+    position: relative;
+}
+
+.worksImage {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 0;
+    height: 100%;
+    object-fit: cover;
+    transition-duration: 0.5s;
+}
+
+.worksImage:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}

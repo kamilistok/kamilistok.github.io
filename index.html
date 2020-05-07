@@ -4,25 +4,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pracownia krawiecka Anna</title>
-    <link rel="icon" href="./img/title/cut-solid.svg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700&display=swap&subset=latin-ext"
-        rel="stylesheet">
+    <title>Document</title>
+    <link href="/css/home.css" rel="stylesheet">
     <link href="/css/global.css" rel="stylesheet">
-    <link href="/css/mainBanner.css" rel="stylesheet">
-    <link href="/css/container.css" rel="stylesheet">
-    <link href="/css/aboutUs.css" rel="stylesheet">
-    <link href="/css/mainNav.css" rel="stylesheet">
-    <link href="/css/bookmark.css" rel="stylesheet">
+    <link href="/css/nav.css" rel="stylesheet">
     <link href="/css/services.css" rel="stylesheet">
-    <link href="/css/gallery.css" rel="stylesheet">
-    <link href="/css/route.css" rel="stylesheet">
-    <link href="/css/mapContainer.css" rel="stylesheet">
+    <link href="/css/works.css" rel="stylesheet">
     <link href="/css/contact.css" rel="stylesheet">
     <link href="/dist/css/lightbox.css" rel="stylesheet" />
-    <script src="https://kit.fontawesome.com/d78bc3d8bf.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -30,447 +19,205 @@
         <div class="mainNav__inner">
             <div class="mainNav__logo">
                 <a href="#" class="mainNav__logoLink">
-                    <i class="fas fa-cut"></i>
-                    Pracownia krawiecka Anna
-                </a>
-            </div>
+                    <img src="/img/logo.png"> </a> </div>
             <ul id="2" class="mainNav__menu">
                 <li class="mainNav__menuItem">
-                    <a href="#aboutUs" class="mainNav__link">
-                        O nas
+                    <a href="#home" class="mainNav__link">
+                        Home
                     </a>
                 </li>
                 <li class="mainNav__menuItem">
                     <a href="#services" class="mainNav__link">
-                        Cennik
+                        Services
                     </a>
                 </li>
                 <li class="mainNav__menuItem">
-                    <a href="#gallery" class="mainNav__link">
-                        Galeria
+                    <a href="#works" class="mainNav__link">
+                        Works
                     </a>
                 </li>
                 <li class="mainNav__menuItem">
                     <a href="#contact" class="mainNav__link">
-                        Kontakt
-                    </a>
-                </li>
-                <li class="mainNav__menuItem">
-                    <a href="#route" class="mainNav__link">
-                        Jak dojechać
+                        Contact
                     </a>
                 </li>
             </ul>
             <button id="1" class="mainNav__mobileBtn">
-                <img src="img/icons/navigation.svg" alt="Otwórz / zamknij nawigację" class="mainNav__mobileBtnImg">
+                <img src="img/navigation.svg" alt="Otwórz / zamknij nawigację" class="mainNav__mobileBtnImg">
             </button>
         </div>
     </nav>
-    <section class="mainBanner">
-        <a href="#aboutUs" class="mainBanner__button">
-            Poznaj nas lepiej
-        </a>
+    <section class="home" id="home">
+        <section class="home__container">
+            <h1 class="home__container-header">Helping Buisness And Companies Innovate And Transform</h1>
+            <p class="home__container-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti sint
+                distinctio perferendis commodi consequuntur, nisi cum id quae voluptatum dicta. Id cupiditate
+                repellat, ipsum sit eum repellendus. Non, illum architecto.</p>
+            <div class="home__content-buttons">
+                <button class="home__content-button startBtn">Start Now</button>
+                <button class="home__content-button servicesBtn">Our Services</button>
+            </div>
+        </section>
+        <section class="home__tiles">
+            <div class="home__tilesUnit">
+                <img src="/img/content-concept-strategy.svg" class="home__tile-image" alt="concept strategy">
+                <h3 class="home__tile-title">Content Concept & Strategy</h3>
+                <p class="home__tile-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit totam beatae
+                    tempora impedit deleniti labore.</p>
+            </div>
+            <div class="home__tilesUnit">
+                <img src="/img/design-conscepts.svg" class="home__tile-image" alt="concept strategy">
+                <h3 class="home__tile-title">Designed & Concepts</h3>
+                <p class="home__tile-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit totam beatae
+                    tempora impedit deleniti labore.</p>
+            </div>
+            <div class="home__tilesUnit">
+                <img src="/img/seo-marketing.svg" class="home__tile-image" alt="concept strategy">
+                <h3 class="home__tile-title">SEO & Marketing Solutions</h3>
+                <p class="home__tile-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit totam beatae
+                    tempora impedit deleniti labore.</p>
+            </div>
+        </section>
     </section>
-
-    <div class="container" id="aboutUs">
-        <section class="aboutUs">
-            <div class="aboutUs__text">
-                <h1 class="aboutUs__header">PRACOWNIA KRAWIECKA ANNA</h1>
-                <p class="aboutUs__paragraph">Pracownia krawiecka ANNA istnieje na rynku lubelskim nieprzerwanie od 20
-                    lat. Pracownia świadczy profesjonalne usługi z zakresu dopasowywania, przeróbek i naprawy odzieży
-                    damskiej, męskiej i dziecięcej. Oferuje szycie firan, zasłon, poduszek, a także innych artukułów
-                    dekoracyjnych. Posiadamy doświadczenie we współpracy z salonami mody ślubnej. Chętnie podejmujemy
-                    się nietypowych zleceń.</p>
-                <p class="aboutUs__paragraph">Zapraszamy do kontaktu i współpracy.</p>
-            </div>
-            <img class="aboutUs__img" src="/img/aboutUs.jpg">
+    <section class="services" id="services">
+        <div class="services__header">
+            <h5 class="services__header-h5">Services</h5>
+            <h2 class="services__header-h2">Best services for<span class="text-color"> Visual Perfction</span></h2>
+            <p class="services__header-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem,
+                illo eum eligendi quaerat, aliquid minus, earum maxime iusto nobis blanditiis accusamus at dolor!</p>
+        </div>
+        <section class="services__tiles">
+            <section class="services__tile">
+                <img src="/img/icons/strategy.png" class="services__tile-img">
+                <h4 class="services__tiles-h4">Strategy</h4>
+                <p class="services__tiles-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt
+                    impedit ab voluptas vero omnis ad non obcaecati quod.</p>
+            </section>
+            <section class="services__tile">
+                <img src="/img/icons/marketing.png" class="services__tile-img">
+                <h4 class="services__tiles-h4">Marketing</h4>
+                <p class="services__tiles-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt
+                    impedit ab voluptas vero omnis ad non obcaecati quod.</p>
+            </section>
+            <section class="services__tile">
+                <img src="/img/icons/technology.png" class="services__tile-img">
+                <h4 class="services__tiles-h4">Technology</h4>
+                <p class="services__tiles-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt
+                    impedit ab voluptas vero omnis ad non obcaecati quod.</p>
+            </section>
+            <section class="services__tile">
+                <img src="/img/icons/ecommerce.png" class="services__tile-img">
+                <h4 class="services__tiles-h4">Ecommerce</h4>
+                <p class="services__tiles-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt
+                    impedit ab voluptas vero omnis ad non obcaecati quod.</p>
+            </section>
+            <section class="services__tile">
+                <img src="/img/icons/branding.png" class="services__tile-img">
+                <h4 class="services__tiles-h4">Branding</h4>
+                <p class="services__tiles-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt
+                    impedit ab voluptas vero omnis. ad non obcaecati quod.</p>
+            </section>
+            <section class="services__tile">
+                <img src="/img/icons/seo.png" class="services__tile-img">
+                <h4 class="services__tiles-h4">SEO Identity</h4>
+                <p class="services__tiles-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem sunt
+                    impedit ab voluptas vero omnis ad non obcaecati quod.</p>
+            </section>
         </section>
-    </div>
-    <section class="bookmark bookmarkServices" id="services">
-        <h2 class="bookmarkHeader">Cennik</h2>
-        <p class="bookmarkDescription">Podane ceny są cenami orientacyjnymi</p>
     </section>
-    <div class="container">
-        <section class="services">
-            <div class="servicesColumn">
-                <h3 class="servicesHeader">Skracanie odzieży</h3>
-                <ul class="servicesList">
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Spodnie</div>
-                            <div class="servicesPositionPrice">25</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Spódnica</div>
-                            <div class="servicesPositionPrice">15</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Sukienka</div>
-                            <div class="servicesPositionPrice">20</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Rękaw w koszuli</div>
-                            <div class="servicesPositionPrice">15</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Rękaw w żakiecie</div>
-                            <div class="servicesPositionPrice">25</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Rękaw w kurtce</div>
-                            <div class="servicesPositionPrice">35</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Rękaw w marynarce</div>
-                            <div class="servicesPositionPrice">35</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Płaszcz</div>
-                            <div class="servicesPositionPrice">60</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Kurtka</div>
-                            <div class="servicesPositionPrice">60</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Marynarka</div>
-                            <div class="servicesPositionPrice">60</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="servicesColumn">
-                <h3 class="servicesHeader">Szycie miarowe</h3>
-                <ul class="servicesList">
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Spódnica podstawowa</div>
-                            <div class="servicesPositionPrice">90</div>
-                        </div>
-                    </li>
+    <section class="container__works">
 
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Spódnica fantazyjna</div>
-                            <div class="servicesPositionPrice">120</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Sukienka podstawowa</div>
-                            <div class="servicesPositionPrice">140</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Sukienka wieczorowa</div>
-                            <div class="servicesPositionPrice">250</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Spodnie</div>
-                            <div class="servicesPositionPrice">120</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Zakiet podstawowy</div>
-                            <div class="servicesPositionPrice">150</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="services">
-            <div class="servicesColumn">
-                <h3 class="servicesHeader">Wymiana zamka</h3>
-                <ul class="servicesList">
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Spodnie</div>
-                            <div class="servicesPositionPrice">15</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Spódnica</div>
-                            <div class="servicesPositionPrice">15</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Kurtka</div>
-                            <div class="servicesPositionPrice">40</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Sukienka</div>
-                            <div class="servicesPositionPrice">20</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Bluza</div>
-                            <div class="servicesPositionPrice">25</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="servicesColumn">
-                <h3 class="servicesHeader">Zwężanie odzieży</h3>
-                <ul class="servicesList">
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Spodnie</div>
-                            <div class="servicesPositionPrice">25</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Spódnica</div>
-                            <div class="servicesPositionPrice">15</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Bluzka</div>
-                            <div class="servicesPositionPrice">15</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Kurtka</div>
-                            <div class="servicesPositionPrice">40</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Płaszcz</div>
-                            <div class="servicesPositionPrice">60</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-
-        </section>
-        <section class="services">
-            <div class="servicesColumn">
-                <h3 class="servicesHeader">Szycie firan</h3>
-                <ul class="servicesList">
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Obrębianie boków</div>
-                            <div class="servicesPositionPrice curtains">3</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Odszycie taśmy</div>
-                            <div class="servicesPositionPrice curtains">6</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Lamówka</div>
-                            <div class="servicesPositionPrice curtains">6</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="servicesColumn">
-                <h3 class="servicesHeader">Poprawki sukni ślubnej</h3>
-                <ul class="servicesList">
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Wymiana zamka</div>
-                            <div class="servicesPositionPrice">30</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Zwężenie</div>
-                            <div class="servicesPositionPrice">80</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Skrócenie sukni</div>
-                            <div class="servicesPositionPrice">150</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Wymiana gorsetu</div>
-                            <div class="servicesPositionPrice">500</div>
-                        </div>
-                    </li>
-                    <li class="servicesListItem">
-                        <div class="servicesPosition">
-                            <div class="servicesPositionName">Poszerzenie sukni</div>
-                            <div class="servicesPositionPrice">120</div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
-    </div>
-
-
-    <section class="bookmark bookmarkGallery" id="gallery">
-        <h2 class="bookmarkHeader">Galeria</h2>
-        <!-- <p class="bookmarkDescription"></p> -->
-    </section>
-
-    <div class="container">
-        <ul class="gallery">
-            <li class="galleryListItem">
-                <div class="galleryAspectRatio">
+        <ul class="works" id="works">
+            <li class="worksListItem">
+                <div class="worksAspectRatio">
                     <a data-lightbox="obrazek 1" href="/img/gallery/1.jpg">
-                        <img class="galleryImage" src="/img/gallery/1.jpg">
+                        <img class="worksImage" src="/img/gallery/1.jpg">
                     </a>
                 </div>
             </li>
-            <li class="galleryListItem">
-                <div class="galleryAspectRatio">
+            <li class="worksListItem">
+                <div class="worksAspectRatio">
                     <a data-lightbox="obrazek 1" href="/img/gallery/2.jpg">
-                        <img class="galleryImage" src="/img/gallery/2.jpg">
+                        <img class="worksImage" src="/img/gallery/2.jpg">
                     </a>
                 </div>
             </li>
-            <li class="galleryListItem">
-                <div class="galleryAspectRatio">
+            <li class="worksListItem">
+                <div class="worksAspectRatio">
                     <a data-lightbox="obrazek 1" href="/img/gallery/3.jpg">
-                        <img class="galleryImage" id="image3" src="/img/gallery/3.jpg">
+                        <img class="worksImage" src="/img/gallery/3.jpg">
                     </a>
                 </div>
             </li>
-            <li class="galleryListItem">
-                <div class="galleryAspectRatio">
+            <li class="worksListItem">
+                <div class="worksAspectRatio">
                     <a data-lightbox="obrazek 1" href="/img/gallery/4.jpg">
-                        <img class="galleryImage" id="image4" src="/img/gallery/4.jpg">
+                        <img class="worksImage" src="/img/gallery/4.jpg">
                     </a>
                 </div>
             </li>
-            <li class="galleryListItem">
-                <div class="galleryAspectRatio">
+            <li class="worksListItem">
+                <div class="worksAspectRatio">
                     <a data-lightbox="obrazek 1" href="/img/gallery/5.jpg">
-                        <img class="galleryImage" src="/img/gallery/5.jpg">
+                        <img class="worksImage" src="/img/gallery/5.jpg">
                     </a>
                 </div>
             </li>
-            <li class="galleryListItem">
-                <div class="galleryAspectRatio">
+            <li class="worksListItem">
+                <div class="worksAspectRatio">
                     <a data-lightbox="obrazek 1" href="/img/gallery/6.jpg">
-                        <img class="galleryImage" id="image6" src="/img/gallery/6.jpg">
+                        <img class="worksImage" src="/img/gallery/6.jpg">
                     </a>
                 </div>
             </li>
-            <li class="galleryListItem">
-                <div class="galleryAspectRatio">
+            <li class="worksListItem">
+                <div class="worksAspectRatio">
                     <a data-lightbox="obrazek 1" href="/img/gallery/7.jpg">
-                        <img class="galleryImage" id="image7" src="/img/gallery/7.jpg">
+                        <img class="worksImage" src="/img/gallery/7.jpg">
                     </a>
                 </div>
             </li>
-            <li class="galleryListItem">
-                <div class="galleryAspectRatio">
+            <li class="worksListItem">
+                <div class="worksAspectRatio">
                     <a data-lightbox="obrazek 1" href="/img/gallery/8.jpg">
-                        <img class="galleryImage" id="image8" src="/img/gallery/8.jpg">
-                    </a>
-                </div>
-            </li>
-            <li class="galleryListItem">
-                <div class="galleryAspectRatio">
-                    <a data-lightbox="obrazek 1" href="/img/gallery/9.jpg">
-                        <img class="galleryImage" id="image9" src="/img/gallery/9.jpg">
+                        <img class="worksImage" src="/img/gallery/8.jpg">
                     </a>
                 </div>
             </li>
         </ul>
-    </div>
-    <section class="bookmark bookmarkContact" id="contact">
-        <h2 class="bookmarkHeader">Kontakt</h2>
-        <p class="bookmarkDescription">Jeśli masz jakieś pytania, zadzwoń lub napisz wiadomość</p>
     </section>
-    <div class="container">
-        <div class="contact">
-            <a href="tel:668-045-103">
-                <i class="fas fa-phone-square-alt"></i>
-            </a>
-            <a href="tel:668-045-103" class="contactNumber" id="telNumber">668-045-103</a>
+
+    <section class="contactContainer" id="contact">
+        <div class="contactContainer__text">
+            <h2 class="contactContainer__text-h2">Want to have a professional project? Let's talk about it.</h2>
+            <p class="contactContainer__text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae id
+                ipsa nulla eos atque dolorem recusandae commodi dicta error ex, unde voluptas culpa, nobis dolor eveniet
+                quo expedita sit!</p>
+            <p class="contactContainer__text-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo quae id
+                ipsa nulla eos atque dolorem recusandae commodi dicta error ex, unde voluptas culpa, nobis dolor eveniet
+                quo expedita sit!</p>
         </div>
-    </div>
-    <section class="bookmark bookmarkRoute" id="route">
-        <h2 class="bookmarkHeader">Jak dojechać</h2>
-        <!-- <p class="bookmarkDescription"></p> -->
+        <div class="contactContainer__form">
+            <input name="name" class="contactContainer__form__field bigForm" required placeholder="YOUR NAME*">
+            <div class="contactContainer__forms">
+                <input name="company" class="contactContainer__form__field smallerForm" required
+                    placeholder="COMPANY NAME*">
+                <input name="email" type="email" class="contactContainer__form__field smallerForm" required
+                    placeholder="EMAIL ADDRESS*">
+            </div>
+            <select class=" contact__form-input bigForm" name="service">
+                <option value="design" selected>Web Design</option>
+                <option value="branding">Branding</option>
+            </select>
+            <textarea name="content" placeholder="DESCRIBE YOUR PROJECT*"
+                class="contactContainer__form__field bigForm"></textarea>
+            <label for="service" class="contactContainer__form__field" required placeholder="COMPANY NAME*"></label>
+            <button class="contactContainer__form__submit-button">Submit</button>
+
+        </div>
     </section>
-    <div class="mapContainer">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.197580626339!2d22.508192816031606!3d51.23385597959115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4722582dee69f571%3A0x8179ec15b0c393f5!2sKawaleryjska%2C%2020-400%20Lublin!5e0!3m2!1spl!2spl!4v1586809756663!5m2!1spl!2spl"
-            class="route">
-        </iframe>
-        <div class="mapText">
-            <div>
-                <p>Adres:</p>
-                <p>ul.Kawaleryjska 15</p>
-            </div>
-            <div>
-                <p>Dni/godziny otwarcia:</p>
-                <div class="mapText__dh">
-                    <p>PON: 8-16</p>
-                    <p>WT: 8-16</p>
-                    <p>ŚR: 8-16</p>
-                    <p>CZW: 8-16</p>
-                    <p>PT: 8-16</p>
-                    <p>SOB: 8-16</p>
-                    <p>NIEDZ: NIECZYNNE</p>
-                </div>
-            </div>
-        </div>
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2498.5819019561345!2d22.52954391603138!3d51.22677727959001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47225783ee13e811%3A0x8e325d6890e25e8!2sRomantyczna%2C%2020-533%20Lublin!5e0!3m2!1spl!2spl!4v1586809705683!5m2!1spl!2spl"
-            class="route" id="route2">
-        </iframe>
-        <div class="mapText" id="mapText2">
-            <div>
-                <p>Adres:</p>
-                <p>ul. Romantyczna 15</p>
-            </div>
-            <div>
-                <p>Dni/godziny otwarcia:</p>
-                <div class="mapText__dh">
-                    <p>PON: 8-16</p>
-                    <p>WT: 8-16</p>
-                    <p>ŚR: 8-16</p>
-                    <p>CZW: 8-16</p>
-                    <p>PT: 8-16</p>
-                    <p>SOB: 8-16</p>
-                    <p>NIEDZ: NIECZYNNE</p>
-                </div>
-            </div>
-        </div>
-        <script src="dist/js/lightbox-plus-jquery.js"></script>
-        <script src="/js/mainNav.js"></script>
+    <script src="dist/js/lightbox-plus-jquery.js"></script>
+    <script src="/js/nav.js"></script>
 </body>
 
 </html>

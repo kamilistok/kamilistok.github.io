@@ -1,38 +1,99 @@
-.contact {
+.contactContainer {
+    padding: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    height: auto;
+}
+
+.contactContainer__form {
     display: flex;
     justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 25vh;
-    /* margin: 1em 20px; */
-    padding: 15px;
-    border: 2px solid #000;
-    background-color: rgb(211, 211, 211);
-    /* color: rgb(61, 51, 51); */
-    color: #265e7d;
-    -moz-border-radius: 50px;
-    -webkit-border-radius: 50px;
-}
-
-.fa-phone-square-alt {
-    margin-right: 2vw;
-    font-size: 100px;
-    color: #000;
-}
-
-.contactNumber {
-    text-decoration: none;
-    margin-left: 2vw;
-    color: #000;
-    font-size: 60px;
+    flex-wrap: wrap;
+    width: 50%;
+    height: 300px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 @media(max-width: 991px) {
-    .fa-phone-square-alt {
-        font-size: 60px;
+    .contactContainer__form {
+        width: 100%;
     }
 
-    .contactNumber {
-        font-size: 20px;
+}
+
+.contactContainer__text {
+    width: 50%;
+}
+
+.contactContainer__forms {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0 10px 0;
+}
+
+.smallerForm {
+    width: 48%;
+}
+
+
+
+
+.contactContainer__form__field {
+    margin-top: 10px;
+}
+
+
+.bigForm {
+    width: 100%;
+}
+
+.contactContainer__form__submit-button {
+    margin-top: 20px;
+    width: 100%;
+    color: white;
+    background-color: #fb414e;
+    border: unset;
+    cursor: pointer;
+}
+
+.contactContainer__text {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: flex-end;
+}
+
+@media(max-width: 991px) {
+    .contactContainer__text {
+        width: 100%;
+        align-items: center;
     }
+
+}
+
+
+.contactContainer__text-h2 {
+    font-family: Source Sans Pro;
+    font-size: 50px;
+    font-weight: 400;
+    text-align: center;
+    color: #202b30;
+}
+
+.contactContainer__text-p {
+    margin-top: 40px;
+    margin-right: 60px;
+    width: 80%;
+    font-size: 18px;
+    text-align: right;
+    color: #a3a3a3;
+}
+
+@media(max-width: 991px) {
+    .contactContainer__text-p {
+        text-align: center;
+        margin-right: unset;
+    }
+
 }

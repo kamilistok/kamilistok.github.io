@@ -1,27 +1,19 @@
 .mainNav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     right: 0;
-    background: rgba(0, 0, 0, 0.5);
     padding: 20px;
     z-index: 1;
 }
 
-.fa-cut {
-    display: none;
-    font-size: 60px !important;
-    margin-right: 50px;
-    color: white;
-}
-
 @media(max-width: 991px) {
-    .fa-cut {
-        display: none;
-        font-size: 40px !important;
-        margin-right: 10px;
+    .mainNav {
+        background-color: #202B30;
     }
 }
+
+
 
 .mainNav__inner {
     display: flex;
@@ -29,6 +21,7 @@
     justify-content: space-between;
     max-width: 1350px;
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .mainNav__logoLink {
@@ -38,6 +31,7 @@
     text-decoration: none;
     color: white;
     text-transform: uppercase;
+    margin-left: 40px;
 }
 
 @media(max-width: 991px) {
@@ -53,6 +47,7 @@
     list-style: none;
     transition: 0.5s;
     transition-property: opacity, transform;
+    margin-right: 40px;
 }
 
 @media(max-width: 991px) {
@@ -62,6 +57,8 @@
         left: 0;
         bottom: 0;
         right: 0;
+        width: 100vw;
+        height: 100vh;
         background: black;
         flex-direction: column;
         justify-content: center;
@@ -100,7 +97,7 @@
 .mainNav__link {
     text-decoration: none;
     color: white;
-    text-transform: uppercase;
+    ;
     font-weight: bold;
     padding-bottom: 5px;
 }
